@@ -27,7 +27,7 @@ v1_api.register(ProjectResource()) # added project resource to v1 api
 v1_api.register(NoteResource()) # added project resource to v1 api
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     # include every v1 api url
     # when you hit a /api route, the only routes available are those listed in v1_api.urls
     url(r'^api/', include(v1_api.urls))
