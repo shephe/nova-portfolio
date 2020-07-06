@@ -11,7 +11,7 @@ import {
 
 const infoStyle = {
   infoArea: {
-    maxWidth: "360px",
+    maxWidth: "50rem",
     margin: "0 auto",
     padding: "70px 0 30px"
   },
@@ -53,15 +53,17 @@ const infoStyle = {
   title: {
     ...title,
     margin: "1.75rem 0 0.875rem !important",
-    minHeight: "unset"
+    minHeight: "unset",
+    fontSize: '1.5rem'
   },
   description: {
     color: grayColor[0],
     overflow: "hidden",
     marginTop: "0px",
+    fontSize: "1.3rem",
     "& p": {
       color: grayColor[0],
-      fontSize: "14px"
+      fontSize: "1.3rem"
     }
   },
   iconWrapperVertical: {
