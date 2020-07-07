@@ -7,12 +7,15 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import CardBody from "components/Card/CardBody.js";
 import Button from "components/CustomButtons/Button.js";
-
+import AccountCircle from "@material-ui/icons/AccountCircle"
 import NavBar from '../components/NavBar'
-
+import MyFooter from '../components/CustomFooter'
+import Parallax from "components/Parallax/Parallax.js"
 import imagesStyles from "assets/jss/nextjs-material-kit-pro/imagesStyles.js";
 
 import { cardTitle } from "assets/jss/nextjs-material-kit-pro.js";
+
+
 
 const style = {
   ...imagesStyles,
@@ -25,28 +28,64 @@ export default function Index (props) {
     const classes = useStyles()
     return (
         <div>
-          <NavBar></NavBar>
-    
-            <Card style={{ width: "20rem" }}>
-      <img
-        style={{ height: "180px", width: "100%", display: "block" }}
-        className={classes.imgCardTop}
-        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22320%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_163df23d717%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_163df23d717%22%3E%3Crect%20width%3D%22320%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22119.0859375%22%20y%3D%2297.35%22%3E320x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-        alt="Card-img-cap"
-      />
-      <CardBody>
-        <h4 className={classes.cardTitle}>{props.projects[0].title}</h4>
-        <a href={props.projects[0].code}>
-            Repo
-        </a>
-      <br/>
-          <a href={props.projects[0].deployment}>
-            Live Site
-        </a>
-          <br/>
-        <Button color="primary">Go to live site</Button>
-      </CardBody>
-    </Card>
+          <NavBar/>
+          <Parallax filter image={require("../assets/img/bg.jpg")} >
+            
+          <Card style={{background: 'rgba(255, 255, 255, 0)', boxShadow: 'none'}}>
+            <CardBody>
+              <h1 className={classes.cardTitle} style={{textAlign: 'center'}}>Welcome</h1>
+              <h2 style={{textAlign: 'center'}}>Sheila Kelley   ||   Software Engineer</h2>
+            </CardBody>
+          
+
+            <div className="cards" style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly'}}>
+
+            <Card style={{ width: "20rem", textAlign: 'center', margin: '1rem', marginBottom: '2rem', background: 'rgba(255, 255, 255, 0.7)', }}>
+              <AccountCircle
+              style={{ height: "180px", width: "100%", display: "block" }}
+              className={classes.imgCardTop}
+              
+              alt="Card-img-cap"
+            />
+            <CardBody>
+            <h2 className={classes.cardTitle} style={{textAlign: 'center'}}>About Me</h2>
+              <h3 className={classes.cardTitle}>Get to know a little more about me.</h3>
+              <Button color="primary" href="/about">About</Button>
+            </CardBody>
+            </Card>
+
+            <Card style={{ width: "20rem", textAlign: 'center', margin: '1rem', marginBottom: '2rem', background: 'rgba(255, 255, 255, 0.7)'}}>
+              <img
+              style={{ height: "180px", width: "100%", display: "block" }}
+              className={classes.imgCardTop}
+              src="https://image.flaticon.com/icons/svg/25/25231.svg"
+              alt="Card-img-cap"
+            />
+            <CardBody>
+            <h2 className={classes.cardTitle} style={{textAlign: 'center'}}>GitHub</h2>
+              <h3 className={classes.cardTitle}>Check out my GitHub account & all associated repositories.</h3>
+              <Button color="primary" href="https://github.com/shephe">See my code</Button>
+            </CardBody>
+            </Card>
+
+            <Card style={{ width: "20rem", textAlign: 'center', margin: '1rem', marginBottom: '2rem', background: 'rgba(255, 255, 255, 0.7)' }}>
+              <img
+              style={{ height: "180px", width: "180px", display: "block", alignSelf: 'center'}}
+              className={classes.imgCardTop}
+              src="https://www.freepnglogos.com/uploads/linkedin-logo-transparent-picture-31.png"
+              alt="Card-img-cap"
+            />
+            <CardBody>
+            <h2 className={classes.cardTitle} style={{textAlign: 'center'}}>LinkedIn</h2>
+              <h3 className={classes.cardTitle}>Professional profile including past experience and achievements.</h3>
+              <Button color="primary" href="https://www.linkedin.com/in/sheilaphedrakelley/">See profile</Button>
+            </CardBody>
+            </Card>
+
+            </div>
+          </Card>
+          </Parallax>
+          <MyFooter></MyFooter>
         </div>
     )
 }

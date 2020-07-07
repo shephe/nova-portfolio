@@ -67,8 +67,9 @@ export default function Header(props) {
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
         <Button className={classes.title}>
-          <Link href="/presentation">
-            <a>{brand}</a>
+          <Link href="/"
+          >
+            <a style={{textDecoration: 'none'}}>{brand}</a>
           </Link>
         </Button>
         <Hidden smDown implementation="css" className={classes.hidden}>

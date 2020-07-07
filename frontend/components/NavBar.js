@@ -11,7 +11,7 @@ const useStyles = makeStyles(navbarsStyle)
 
 export default function NavBar() {
     const classes = useStyles()
-    const style = {width: '100vw', margin: '0 auto'}
+    const style = {width: '100vw', margin: '0 auto' }
     return (
         <div className='navbar' id='navigation'>
             <Header 
