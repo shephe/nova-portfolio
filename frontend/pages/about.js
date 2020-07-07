@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import InfoArea from "components/InfoArea/InfoArea.js";
 import AccountCircle from "@material-ui/icons/AccountCircle"
+import MyFooter from '../components/CustomFooter'
 
 export default function About (props) {
     return (
@@ -17,7 +18,7 @@ export default function About (props) {
             icon={AccountCircle}
             iconColor='rose'
             />
-
+            <MyFooter/>
         </div>
     )
 }

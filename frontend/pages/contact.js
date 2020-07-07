@@ -4,6 +4,7 @@ import CardBody from '../components/Card/CardBody'
 import imagesStyles from "assets/jss/nextjs-material-kit-pro/imagesStyles.js";
 import { cardTitle } from "assets/jss/nextjs-material-kit-pro.js";
 import NavBar from '../components/NavBar'
+import MyFooter from '../components/CustomFooter'
 
 const style = {
     ...imagesStyles,
@@ -24,6 +25,7 @@ export default function Contact (props) {
                     <h2 className={classes.cardTitle}>Get in touch at spkelley26@gmail.com</h2>
                 </CardBody>
             </Card>
+            <MyFooter/>
         </div>
     )
 }

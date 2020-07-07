@@ -6,6 +6,7 @@ import imagesStyles from "assets/jss/nextjs-material-kit-pro/imagesStyles.js";
 import Button from "components/CustomButtons/Button.js";
 import { makeStyles } from "@material-ui/core/styles";
 import { cardTitle } from "assets/jss/nextjs-material-kit-pro.js";
+import MyFooter from '../components/CustomFooter'
 
 import mushroom from '../assets/img/MushroomHunt.png'
 import dayoff from '../assets/img/DayOffPDX.png'
@@ -90,6 +91,7 @@ export default function Portfolio (props) {
                     </CardBody>
                 </Card>
             </div>
+            <MyFooter/>
         </div>
     )
 }
