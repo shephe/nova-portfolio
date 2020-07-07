@@ -22,7 +22,7 @@ export default function NavBar() {
                     <List className={classes.list + ' ' + classes.mlAuto}>
                         <ListItem className={classes.listItem}>
                             <Button
-                                href='/'
+                                href='index'
                                 className={classes.navLink}
                                 // onClick={e => e.preventDefault()}
                                 color='transparent'>
@@ -32,7 +32,7 @@ export default function NavBar() {
 
                         <ListItem className={classes.listItem}>
                             <Button
-                                href='/about'
+                                href='about'
                                 className={classes.navLink}
                                 // onClick={e => e.preventDefault()}
                                 color='transparent'>
@@ -42,7 +42,7 @@ export default function NavBar() {
 
                         <ListItem className={classes.listItem}>
                             <Button
-                                href='/portfolio'
+                                href='portfolio'
                                 className={classes.navLink}
                                 // onClick={e => e.preventDefault()}
                                 color='transparent'>
@@ -52,7 +52,7 @@ export default function NavBar() {
 
                         <ListItem className={classes.listItem}>
                             <Button
-                                href='/contact'
+                                href='contact'
                                 className={classes.navLink}
                                 // onClick={e => e.preventDefault()}
                                 color='transparent'>

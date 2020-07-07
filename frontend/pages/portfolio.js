@@ -12,6 +12,7 @@ import mushroom from '../assets/img/MushroomHunt.png'
 import dayoff from '../assets/img/DayOffPDX.png'
 import complaints from '../assets/img/Complaints.png'
 import gifted from '../assets/img/Gifted.png'
+import events from '../assets/img/events.png'
 
 const style = {
   ...imagesStyles,
@@ -32,7 +33,7 @@ export default function Portfolio (props) {
 
             <Card style={{width: '20rem', margin: '1rem'}}>
                     <img style={{ height: "180px", width: "100%", display: "block" }}
-                    className={classes.imgCardTop} src={gifted} alt="Gifted App" />
+                    className={classes.imgCardTop} src={events} alt="Gifted App" />
 
                     <CardBody>
                         <h2 className={classes.cardTitle + ' ' + 'card-title'}>PDX Events</h2>

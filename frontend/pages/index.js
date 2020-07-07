@@ -29,7 +29,7 @@ export default function Index (props) {
     return (
         <div>
           <NavBar/>
-          <Parallax filter image={require("../assets/img/bg.jpg")} >
+          <Parallax image={require("../assets/img/bg.jpg")} >
             
           <Card style={{background: 'rgba(255, 255, 255, 0)', boxShadow: 'none'}}>
             <CardBody>
